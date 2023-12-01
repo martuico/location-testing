@@ -1,0 +1,35 @@
+{
+  "name": "location-testing",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "server": "yarn workspace server dev",
+    "client": "yarn workspace client dev",
+    "dev": "concurrently \"yarn server dev\" \"yarn client dev\""
+  },
+  "type": "module",
+  "description": "take home",
+  "repository": "https://github.com/martuico/location-testing",
+  "author": "Mar Tuico",
+  "license": "MIT",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "engines": {
+    "node": "20.0.1",
+    "yarn": ">= 3.6.1",
+    "npm": "please-use-yarn"
+  },
+  "packageManager": "yarn@3.6.1",
+  "devDependencies": {
+    "@types/shortid": "^0.0.32",
+    "concurrently": "^8.2.2",
+    "tsc-files": "^1.1.4",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.6"
+  }
+}
